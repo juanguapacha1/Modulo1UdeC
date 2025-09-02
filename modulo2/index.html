@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Task</h1>
+        </nav>
+    </header>
+    <main>
+        <section class="newTask">
+            <h2>New Task</h2>
+            <input type="text" placeholder="New Task" id="taskInput">
+            <input type="text" placeholder="Description" id="descriptionInput">
+            <button onclick="addTask()">Add</button>
+        </section>
+        <section class="tasks">
+            <h2>task</h2>
+            <div class="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Task</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="taskTable">
+
+                    </tbody>
+
+                </table>
+            </div>
+            <div>
+                <button class="listTasks" onclick="showCompletedTasks()">Completed tasks</button>
+                <button class="listTasks" onclick="showAllTasks()">All tasks</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>

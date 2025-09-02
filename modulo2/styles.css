@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 100%;
+    background-color: #9b999980;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;   
+    justify-content: space-around;
+    width: 100%;
+    min-height: 50vh;          
+    height: auto;              
+    flex-wrap: wrap;           
+}
+
+section{
+    width: 40%;
+    padding: 50px;
+    margin: 20px;              
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+
+}
+
+.tasks{
+    max-height: 300vh;
+    overflow: auto;
+}
+
+.newTask{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+input[type="text"]{
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    align-items: center;
+    text-align: center
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-weight: 1000;
+    font-size: 30px;
+    color: #555;
+    text-align: center;
+    
+}
+
+table{
+    width: 100%;
+    /* border: 1px solid #000000; */
+    
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+
+    table-layout: fixed;  
+}
+
+tr{
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.tableContainer{
+    max-height: 30vh;
+    overflow: auto;
+    margin: 20px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.listTasks{
+    margin-top: 30hv;
+}
